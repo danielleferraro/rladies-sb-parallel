@@ -99,17 +99,32 @@ class: center, middle, inverse
 # **Overview**
 
 1. [What is parallel processing?](#what-is)
+
+--
+
 2. [When to use it](#when-to)
+
+--
+
 3. [When *not* to use it](#when-not)
+
+--
+
 4. [R packages for parallelization](#r-packages)
   - [`parallel`](#parallel)
   - [`foreach`](#foreach)
   - [`furrr`](#furrr)
   - [`future.apply`](#futureapply)
+  
+--
+
 5. [Caveats and things to keep in mind](#caveats)
+
+--
+
 6. [Sample code walkthrough](#samplecode)
 
-<br><br>
+--
 
 .center[
 `r icons::fontawesome("github", style = "brands")`<br>
@@ -257,6 +272,8 @@ More of your computer's resources used -> Multiple computations run at the same 
 ---
 
 # **What is parallel processing?**
+
+--
 
 ### Some jargon
 
@@ -489,6 +506,7 @@ Today, we will cover:
 ...but there are many others
 
 - Check out [multidplyr](https://github.com/tidyverse/multidplyr)
+- See the [CRAN Task View: High-Performance and Parallel Computing with R](https://CRAN.R-project.org/view=HighPerformanceComputing) for an extensive list
 
 ---
 
@@ -497,7 +515,7 @@ name: parallel
 
 **Purpose:** parallel versions of apply functions. Note that it is operating system dependent.
 
-Unix/Linux: 
+Unix/Linux (forking): 
 ```{r eval = FALSE}
 # Serial
 lapply(1:10, sqrt)
@@ -509,7 +527,7 @@ mclapply(1:10, sqrt, mc.cores = 4) # Specify 4 cores
 
 --
 
-&zwj;Windows:
+&zwj;Windows (sockets):
 
 ```{r eval = FALSE}
 # Serial
@@ -517,7 +535,7 @@ lapply(1:10, sqrt)
 
 # Parallel 
 cluster <- makePSOCKcluster(4) # Specify 4 cores
-parLapply(cluster, 1:10, sqrt)`
+parLapply(cluster, 1:10, sqrt)
 ```
 
 .footnote[
@@ -576,6 +594,7 @@ name: futureapply
 lapply(1:10, sqrt)
 
 # Parallel 
+plan(multisession)
 future_lapply(1:10, sqrt)
 ```
 
