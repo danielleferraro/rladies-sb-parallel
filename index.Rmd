@@ -113,7 +113,7 @@ class: center, middle, inverse
 
 .center[
 `r icons::fontawesome("github", style = "brands")`<br>
-These slides are available at **[link]**<br><br>
+These slides are available at:<br> [https://danielleferraro.github.io/rladies-sb-parallel/](https://danielleferraro.github.io/rladies-sb-parallel/)<br><br>
 GitHub repo with sample code is available at:<br> [github.com/danielleferraro/rladies-sb-parallel](https://github.com/danielleferraro/rladies-sb-parallel)
 ]
   
@@ -587,6 +587,6 @@ class: center, middle
 
 # Sample code
 
-To follow along during the live coding session: [sample_code.Rmd](github.com/danielleferraro/rladies-sb-parallel/sample_code/sample_code.Rmd)<br>
-If you'd like to write the code along with me: [sample_code_blank.Rmd](github.com/danielleferraro/rladies-sb-parallel/sample_code/sample_code_blank.Rmd)
+To follow along during the live coding session: [sample_code.Rmd](https://github.com/danielleferraro/rladies-sb-parallel/blob/main/sample_code/sample_code.Rmd)<br>
+If you'd like to write the code along with me: [sample_code_blank.Rmd](https://github.com/danielleferraro/rladies-sb-parallel/blob/main/sample_code/sample_code_blank.Rmd)
 
