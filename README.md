@@ -17,4 +17,4 @@ For data wrangling and code timing:<br>
 
 Then, clone or download the repository to your local computer. **sample_code/sample_code_blank.Rmd** is a blank RMarkdown I will code in live during the workshop. Alternatively, **sample_code/sample_code.Rmd** is already filled out for your reference.
 
-Slides available [here](danielleferraro.github.io/rladies-sb-parallel).
+Slides available [here](https://danielleferraro.github.io/rladies-sb-parallel/).
