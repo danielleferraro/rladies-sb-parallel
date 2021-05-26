@@ -39,4 +39,5 @@ vignettes/*.pdf
 .Renviron
 
 # Other
-presentation/img/ppt_schematics.pptx
+img/ppt_schematics.pptx
+.DS_Store
